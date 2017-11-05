@@ -5,7 +5,7 @@ function Random(min, max) {
 }
 
 function RandomInt(min, max) {
-  let rand = between(min, max);
+  let rand = Random(min, max);
 
   return Math.round(rand);
 }

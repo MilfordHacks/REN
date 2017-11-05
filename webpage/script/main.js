@@ -143,9 +143,9 @@ function openInventory(){
 }
 
 function startUp(){
-  room = new Room();
-
   resetPlayer();
+
+  room = new Room();
 
   updateRoom();
 

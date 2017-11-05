@@ -15,7 +15,7 @@ class Room {
         enemies += 1;
       }
 
-      let extraLoot = (Util.randomInt(1, 8) == 8);
+      let extraLoot = (RandomInt(1, 8) == 8);
 
       Rooms++;
 
