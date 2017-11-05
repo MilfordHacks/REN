@@ -20,7 +20,7 @@ class Enemy {
         break;
       case 3: //Zombie
         this.attack = attack * 1.1;
-        (defense > ) ? this.defense = 0.75 : this.defense = defense; //cap at 75%
+        (defense > 0.75) ? this.defense = 0.75 : this.defense = defense; //cap at 75%
         this.speed = speed * 0.9;
         break;
     }

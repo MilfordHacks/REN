@@ -8,7 +8,7 @@ class Room {
       if (enemies > 0) {
         enemies += 1;
       }
-      if (enemies 5 0) {
+      if (enemies > 5) {
         enemies += 1;
       }
       if (enemies > 9) {

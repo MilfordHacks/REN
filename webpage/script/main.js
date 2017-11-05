@@ -93,7 +93,7 @@ function attackCharacter(character){
     room.enemies = room.enemies.filter(function(item) {return item != character;} );
   }
 
-  Player.ticks = 1000 / (Player.speed + (Player.weapon.type == 1) ? Player.weapon.modifier * 5: 0;
+  Player.ticks = 1000 / (Player.speed + (Player.weapon.type == 1) ? Player.weapon.modifier * 5 : 0);
 
   for (var i = 0; i < enemies; i++){
     let enemy = room.enemies[i];
@@ -208,3 +208,5 @@ function handleLoot(extra){
     new Loot(5, extra);
   });
 }
+
+startUp();
