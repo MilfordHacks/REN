@@ -6,7 +6,7 @@ function closeNextRoom(){
   $("#nextRoom").hide();
 }
 
-function drawInventor(){
+function drawInventory(){
   $("#Inventory").show();
 }
 
