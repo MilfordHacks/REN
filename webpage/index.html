@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <link ref="stylesheet" type="text/css" href="./style.css" />
-    <title> CincyHacks: Fungeon </title>
+    <title> CincyHacks: REN </title>
       <style>
       @font-face {
         font-family:quikhand;
@@ -29,6 +29,27 @@
         font-family: quikhand, serif;
         letter-spacing: 4px;
       }
+
+      .sk {background-image: url(skel.png); width:80px; height:140px;}
+      .zb {background-image: url(zomb.png); width:80px; height:140px;}
+      .sp {background-image: url(spoder.png); width:80px; height:35px;}
+      .plr {background-image: url(plr.png); width:; height:;}
+      .frBl {background-image: url(firbal.png); width:; height:;}
+      .chst {background-image: url(chst.png); width:; height:;}
+
+      .sk, .zb, .sp, .plr, .frBl, .chst {
+        position: relative;
+      }
+
+      #sk1 {top:0px; left:0px;}
+      #sk2 {top:-140px; left:80px;}
+      #sk3 {top:-280px; left:160px;}
+      #zb1 {top:-280px; left:0px;}
+      #zb2 {top:-420px; left:80px;}
+      #zb3 {top:-560px; left:160px;}
+      #sp1 {top:-560px; left:0px;}
+      #sp2 {top:-595px; left:80px;}
+      #sp3 {top:-630px; left:160px;}
     </style>
 
   </head>
@@ -43,8 +64,25 @@
 
 <br /><br /><br />
 
-<div></div>
-<div style="width:800px; height:400px; background-color:white; border: solid 5px black"></div>
+
+
+
+<div style="width:800px; height:400px; background-color:white; border: solid 5px black">
+<!-- canvas -->
+
+<!-- enemies -->
+<div class="sk" id="sk1"></div>
+<div class="sk" id="sk2"></div>
+<div class="sk" id="sk3"></div>
+<div class="zb" id="zb1"></div>
+<div class="zb" id="zb2"></div>
+<div class="zb" id="zb3"></div>
+<div class="sp" id="sp1"></div>
+<div class="sp" id="sp2"></div>
+<div class="sp" id="sp3"></div>
+
+</div>
+
 <div style="width:1px; height:100px;"></div>
 
   </body>
