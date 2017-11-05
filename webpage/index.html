@@ -6,7 +6,7 @@
 
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <meta charset="utf-8" />
     <link ref="stylesheet" type="text/css" href="./style.css" />
     <title> CincyHacks: REN </title>
       <style>
@@ -31,13 +31,13 @@
       }
       div {position: relative;}
       .btn {
-        width: 200px;
-        height: 40px;
-
         background-color: #d0d0d0;
-
+        width: 90px;
         border-radius: 10px;
-        border-top-left-radius: 0px;
+        text-align: center;
+      }
+      .btn:hover {
+        background-color: #b4b4b4;
       }
 
 /* monsters */
@@ -54,6 +54,18 @@
       .frBl {background-image: url(img/firbal.png); width:; height:;}
       .chst {background-image: url(img/chst.png); width:; height:;}
 
+      #invBtn {
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+          top: -740px; left: 5px;
+
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
+          border-bottom-left-radius: 0px;
+      }
 
       #sk1 {top:0px; left:0px;}
       #zb1 {top:-140px; left:0px;}
@@ -69,7 +81,7 @@
 
       #plr {top:-280px; left:900px;}
 
-            
+
 
             #atk {top:-580px; left:835px;}
             #spd {top:-380px; left:960px;}
@@ -85,7 +97,6 @@
       #enemy1, #enemy2, #enemy3 {
         width: 80px;
         height: 140px;
-        position: relative;
         }
       #enemy1 {top:235px; left:710px;}
       #enemy2 {top:75px; left:620px;}
@@ -100,6 +111,31 @@
       #hp1 {top:230px; left:530px;}   /*slot 1 hp*/
       #hp2 {top:70px; left:620px;}    /*slot 2 hp*/
       #hp3 {top:-90px; left:710px;}   /*slot 3 hp*/
+
+      #cutting {top:0px; left:0px;
+        width: 100px;
+        height:100px:
+      }
+      #blunt   {top:0px; left:0px;
+        width: 100px;
+        height:100px:
+
+      }
+      #magic   {top:0px; left:0px;
+        width: 100px;
+        height:100px:
+
+      }
+         #iswd, #ihmr{
+           padding:5px;
+         }
+          #iwnd {
+            padding:5px 35px 5px 35px;
+            width:30px;
+          }
+          #iswd {top:-730px; left:15px;}
+          #ihmr {top:-820px; left:125px;}
+          #iwnd {top:-910px; left:235px;}
 
     </style>
 
@@ -165,7 +201,14 @@
 <div id="luk">Luckie</div>
  <div id="hp">HitPnt</div>
 
-<div class="btn" id="invBtn"></div>
+<div class="btn" id="invBtn">Inventory</div>
+<div id="Inventory">
+
+  <div class="btn" id="iswd"><div class="swd"></div></div>
+  <div class="btn" id="ihmr"><div class="hmr"></div></div>
+  <div class="btn" id="iwnd"><div class="wnd"></div></div>
+
+</div>
 
 
   </body>
