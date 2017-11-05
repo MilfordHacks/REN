@@ -5,13 +5,13 @@ class Room {
       let rawEnemies = RandomInt(0, 10);
       let enemies = 0;
 
-      if (enemies > 0) {
+      if (rawEnemies > 0) {
         enemies += 1;
       }
-      if (enemies > 5) {
+      if (rawEnemies > 5) {
         enemies += 1;
       }
-      if (enemies > 9) {
+      if (rawEnemies > 9) {
         enemies += 1;
       }
 

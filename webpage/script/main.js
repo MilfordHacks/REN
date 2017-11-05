@@ -30,7 +30,7 @@ function doTurn(character) {
     Player.health = damage - (damage * Player.defense);
 
     Player.ticks -= character.ticks;
-    for (var i = 0; i < enemies; i++){
+    for (var i = 0; i < room.enemies.length; i++){
       let enemy = room.enemies[i];
 
       enemy.ticks -= character.ticks;
@@ -43,7 +43,7 @@ function doTurn(character) {
     updatePlayer();
 
     var nextCharacter = findNextTurn();
-    setTimeout(doTurn, 0, nextCharacter);
+    setTimeout(doTurn, 1000, nextCharacter);
   }
   else {
     if (room.enemies > 0) {
@@ -116,25 +116,25 @@ else {
 
 
 
-$("#invBtn").click(drawInventory);
+$("#invBtn").one("click", openInventory);
 
 function openInventory(){
   drawInventory();
 
   $("#magic").one("click",() => {
     Player.weapon = Player.inventory.magic;
-    $("#close").click();
+    $("#invBtn").click();
   });
   $("#cutting").one("click",() => {
     Player.weapon = Player.inventory.cutting;
-    $("#close").click();
+    $("#invBtn").click();
   });
   $("#blunt").one("click",() => {
     Player.weapon = Player.inventory.blunt;
-    $("#close").click();
+    $("#invBtn").click();
   });
 
-  $("#close").one("click",() => {
+  $("#invBtn").one("click",() => {
     $("magic").off();
     $("cutting").off();
     $("blunt").off();

@@ -54,6 +54,8 @@
       .frBl {background-image: url(img/firbal.png); width:; height:;}
       .chst {background-image: url(img/chst.png); width:; height:;}
 
+      .visible {visibility: visible;}
+
       #invBtn {
           padding-left: 30px;
           padding-right: 30px;
@@ -114,16 +116,16 @@
 
       #cutting {top:0px; left:0px;
         width: 100px;
-        height:100px:
+        height:100px;
       }
       #blunt   {top:0px; left:0px;
         width: 100px;
-        height:100px:
+        height:100px;
 
       }
       #magic   {top:0px; left:0px;
         width: 100px;
-        height:100px:
+        height:100px;
 
       }
          #iswd, #ihmr{
@@ -136,6 +138,64 @@
           #iswd {top:-730px; left:15px;}
           #ihmr {top:-820px; left:125px;}
           #iwnd {top:-910px; left:235px;}
+
+          #restart {
+            background-color:#ff3633;
+            color:#330100;
+
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-top-left-radius: 0px;
+
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            z-index: 1;
+
+            top:-1049px; left:655px;
+
+             display: none;
+          }
+          #restart:hover {
+            background-color: #ff0400;
+          }
+
+          #nextRoom {
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                border-top-left-radius: 0px;
+
+                z-index: 2;
+
+                top:-1088px; left:655px;
+
+                 display: none;
+
+          }
+          #Inventory {
+             display: none;
+          }
+          #Loot {
+            display: none;
+          }
+          #loot1, #loot2, #loot3, #loot4, #loot5 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 0px;
+            padding-right: 0px;
+          }
+          #loot1 {top:0px; left:0px;}
+          #loot2 {top:0px; left:0px;}
+          #loot3 {top:0px; left:0px;}
+          #loot4 {top:0px; left:0px;}
+          #loot5 {top:0px; left:0px;}
 
     </style>
 
@@ -204,12 +264,25 @@
 <div class="btn" id="invBtn">Inventory</div>
 <div id="Inventory">
 
-  <div class="btn" id="iswd"><div class="swd"></div></div>
-  <div class="btn" id="ihmr"><div class="hmr"></div></div>
-  <div class="btn" id="iwnd"><div class="wnd"></div></div>
+  <div class="btn" id="iswd"><div class="swd" id="cutting" style="width:80px; height:80px;"></div></div>
+  <div class="btn" id="ihmr"><div class="hmr" id="blunt" style="width:80px; height:80px;"></div></div>
+  <div class="btn" id="iwnd"><div class="wnd" id="magic" style="width:30px; height:80px;"></div></div>
+
 
 </div>
+      <div class="visible"></div>
+  <div class="btn" id="restart">Restart</div>
+      <div class="visible"></div>
+  <div class="btn" id="nextRoom">Next Room</div>
+      <div class="visible"></div>
 
+      <div id="Loot">
+        <div class="btn" id="loot1">HP</div> <!-- HP -->
+        <div class="btn" id="loot2">Def</div> <!-- Defense -->
+        <div class="btn" id="loot3">Luck</div> <!-- Luck -->
+        <div class="btn" id="loot4">Atk</div> <!-- Attack -->
+        <div class="btn" id="loot5">Wpn</div> <!-- Random Weapon -->
+      </div>
 
   </body>
 
