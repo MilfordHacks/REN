@@ -25,6 +25,6 @@ class Room {
         this.enemies.push(new Enemy());
       }
 
-      Player.ticks = 1000 / (Player.speed * (Player.weapon.type == 1) ? Player.weapon.modifier : 1;
+      Player.ticks = 1000 / (Player.speed * (Player.weapon.type == 1) ? Player.weapon.modifier : 1);
   }
 }
