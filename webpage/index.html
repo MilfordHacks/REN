@@ -29,29 +29,52 @@
         font-family: quikhand, serif;
         letter-spacing: 4px;
       }
-
+      div {position: relative;}
+/* monsters */
       .sk {background-image: url(img/skel.png); width:80px; height:140px;}
       .zb {background-image: url(img/zomb.png); width:80px; height:140px;}
       .sp {background-image: url(img/spoder.png); width:80px; height:35px;}
+/* player */
       .plr {background-image: url(img/plr.png); width:70px; height:160px;}
+/* items */
+      .swd {background-image: url(img/swd.png); width:80px; height:80px;}
+      .hmr {background-image: url(img/hmr.png); width:80px; height:80px;}
+      .wnd {background-image: url(img/wnd.png); width:30px; height:80px;}
+/* misc */
       .frBl {background-image: url(img/firbal.png); width:; height:;}
       .chst {background-image: url(img/chst.png); width:; height:;}
 
-      .sk, .zb, .sp, .plr, .frBl, .chst {
-        position: relative;
-      }
 
       #sk1 {top:0px; left:0px;}
-      #sk2 {top:-140px; left:80px;}
-      #sk3 {top:-280px; left:160px;}
+      #zb1 {top:-140px; left:0px;}
+      #sp1 {top:-175px; left:0px;}
 
-      #zb1 {top:-420px; left:0px;}
-      #zb2 {top:-560px; left:80px;}
-      #zb3 {top:-700px; left:160px;}
+      #sk2 {top:0px; left:0px;}
+      #zb2 {top:-140px; left:0px;}
+      #sp2 {top:-175px; left:0px;}
 
-      #sp1 {top:-735px; left:0px;}
-      #sp2 {top:-770px; left:80px;}
-      #sp3 {top:-805px; left:160px;}
+      #sk3 {top:0px; left:0px;}
+      #zb3 {top:-140px; left:0px;}
+      #sp3 {top:-175px; left:0px;}
+
+      #enemy1, #enemy2, #enemy3 {
+        width: 80px;
+        height: 140px;
+        position: relative;
+        }
+      #enemy1 {top:235px; left:710px;}
+      #enemy2 {top:75px; left:620px;}
+      #enemy3 {top:-85px; left:530px;}
+
+      #hp1, #hp2, #hp3 {
+        width:auto;
+        height:20px;
+
+        position:relative;
+      }
+      #hp1 {top:230px; left:530px;}   /*slot 1 hp*/
+      #hp2 {top:70px; left:620px;}    /*slot 2 hp*/
+      #hp3 {top:-90px; left:710px;}   /*slot 3 hp*/
 
     </style>
 
@@ -73,28 +96,40 @@
     <h1>Raymond's Endless Nightmare</h1>
     <h3><i>A game developed for CincyHacks by the <span title="Tyler, Raymond, and Sean!"><b>MilfordHacks</b></span> team.</i></h3>
 
-<br /><br /><br />
+<br /><br />
 
 
 
 
-<div style="width:800px; height:400px; background-color:white; border: solid 5px black">
+<div style="position:static; width:800px; height:400px; color:black; text-shadow:none; background-color:white; border: solid 5px black; border-radius:3px;">
 <!-- canvas -->
 
 <!-- enemies -->
-<div class="sk" id="sk1"></div>
-<div class="sk" id="sk2"></div>
-<div class="sk" id="sk3"></div>
-<div class="zb" id="zb1"></div>
-<div class="zb" id="zb2"></div>
-<div class="zb" id="zb3"></div>
-<div class="sp" id="sp1"></div>
-<div class="sp" id="sp2"></div>
-<div class="sp" id="sp3"></div>
-
+<div id="hp1">HP 1</div>
+<div id="enemy1">
+  <div class="sk" id="sk1"></div>
+  <div class="zb" id="zb1"></div>
+  <div class="sp" id="sp1"></div>
 </div>
 
-<div style="width:1px; height:100px;"></div>
+<div id="hp2">HP 2</div>
+<div id="enemy2">
+  <div class="sk" id="sk2"></div>
+  <div class="zb" id="zb2"></div>
+  <div class="sp" id="sp2"></div>
+</div>
+
+<div id="hp3">HP 3</div>
+<div id="enemy3">
+  <div class="sk" id="sk3"></div>
+  <div class="zb" id="zb3"></div>
+  <div class="sp" id="sp3"></div>
+</div>
+
+<div style="margin-left:10px; width:200px; height:400px; color:black; text-shadow:none; background-color:white; border: solid 5px black; border-radius:3px;">
+</div>
+
+</div>
 
   </body>
 
