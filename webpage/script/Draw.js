@@ -39,8 +39,8 @@ function updateRoom(){
 function updatePlayer () {
   $("#atk").text("Atk: " + Player.attack);
   $("#spd").text("Spd: " + Player.speed);
-  $("#def").text("Def: " + Player.defense);
-  $("#luk").text("Luk: " + Player.luck);
+  $("#def").text("Def: " + Player.defense*100+"%");
+  $("#luk").text("Luck: " + Player.luck*100+"%");
   $("#hp").text("HP: " + Player.health);
   for (var i = 0; i<3; i++) {
     $("#weapon"+(i+1)).hide();

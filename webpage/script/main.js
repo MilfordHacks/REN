@@ -116,7 +116,7 @@ else {
 
 
 
-$("#inventory").one("click",drawInventory);
+$("#invBtn").click(drawInventory);
 
 function openInventory(){
   drawInventory();
