@@ -33,15 +33,15 @@ function closeLoot(){
 
 function updateRoom(){
   updatePlayer();
-  $("#roomNum").val("Room#: " + rooms);
+  $("#roomNum").text("Room#: " + Rooms);
   updateEnemies();
 }
 function updatePlayer () {
-  $("#atk").val("Atk: " + Player.attack);
-  $("#spd").val("Spd: " + Player.speed);
-  $("#def").val("Def: " + Player.defense);
-  $("#luk").val("Luk: " + Player.luck);
-  $("#hp").val("HP: " + Player.health);
+  $("#atk").text("Atk: " + Player.attack);
+  $("#spd").text("Spd: " + Player.speed);
+  $("#def").text("Def: " + Player.defense);
+  $("#luk").text("Luk: " + Player.luck);
+  $("#hp").text("HP: " + Player.health);
   for (var i = 0; i<3; i++) {
     $("#weapon"+(i+1)).hide();
   }
@@ -49,10 +49,10 @@ function updatePlayer () {
 }
 function updateEnemies () {
   for (var i = 0; i<3; i++) {
-    $("#sk"+(i+1)).hide();
+    /*$("#sk"+(i+1)).hide();
     $("#zb"+(i+1)).hide();
     $("#sp"+(i+1)).hide();
-    $("#hp"+(i+1)).hide();
+    $("#hp"+(i+1)).hide();*/
   }
   for (var i = 0; i < room.enemies.length; i++) {
     var enemy = room.enemies[i]
@@ -68,7 +68,7 @@ function updateEnemies () {
       break;
     }
     $("#hp"+(i+1)).show();
-    $("#hp"+(i+1)).val("HP: " + enemy.health);
+    $("#hp"+(i+1)).text("HP: " + enemy.health);
   }
 }
 function animateEnemy () {}
