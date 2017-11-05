@@ -49,10 +49,10 @@ function updatePlayer () {
 }
 function updateEnemies () {
   for (var i = 0; i<3; i++) {
-    /*$("#sk"+(i+1)).hide();
+    $("#sk"+(i+1)).hide();
     $("#zb"+(i+1)).hide();
     $("#sp"+(i+1)).hide();
-    $("#hp"+(i+1)).hide();*/
+    $("#hp"+(i+1)).hide();
   }
   for (var i = 0; i < room.enemies.length; i++) {
     var enemy = room.enemies[i]
