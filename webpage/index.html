@@ -54,7 +54,6 @@
       .frBl {background-image: url(img/firbal.png); width:; height:;}
       .chst {background-image: url(img/chst.png); width:; height:;}
 
-      .visible {visibility: visible;}
 
       #invBtn {
           padding-left: 30px;
@@ -70,16 +69,16 @@
       }
 
       #sk1 {top:0px; left:0px;}
-      #zb1 {top:-140px; left:0px;}
-      #sp1 {top:-175px; left:0px;}
+      #zb1 {top:0px; left:0px;}
+      #sp1 {top:100px; left:0px;}
 
       #sk2 {top:0px; left:0px;}
-      #zb2 {top:-140px; left:0px;}
-      #sp2 {top:-175px; left:0px;}
+      #zb2 {top:0px; left:0px;}
+      #sp2 {top:100px; left:0px;}
 
       #sk3 {top:0px; left:0px;}
-      #zb3 {top:-140px; left:0px;}
-      #sp3 {top:-175px; left:0px;}
+      #zb3 {top:0px; left:0px;}
+      #sp3 {top:100px; left:0px;}
 
       #plr {top:-280px; left:900px;}
 
@@ -92,8 +91,8 @@
             #hp  {top:-535PX; left:1000px;}
 
             #weapon1 {top:-420px; left:840px;}
-            #weapon2 {top:-500px; left:840px;}
-            #weapon3 {top:-580px; left:890px;}
+            #weapon2 {top:-420px; left:840px;}
+            #weapon3 {top:-420px; left:890px;}
 
 
       #enemy1, #enemy2, #enemy3 {
@@ -110,34 +109,40 @@
 
         position:relative;
       }
-      #hp1 {top:230px; left:530px;}   /*slot 1 hp*/
+      #hp1 {top:230px; left:710px;}   /*slot 1 hp*/
       #hp2 {top:70px; left:620px;}    /*slot 2 hp*/
-      #hp3 {top:-90px; left:710px;}   /*slot 3 hp*/
+      #hp3 {top:-90px; left:530px;}   /*slot 3 hp*/
 
-      #cutting {top:0px; left:0px;
+      #cutting {
         width: 100px;
         height:100px;
+        top:-730px; left:15px;
       }
-      #blunt   {top:0px; left:0px;
+      #blunt   {
         width: 100px;
         height:100px;
+        top:-830px; left:125px;
 
       }
-      #magic   {top:0px; left:0px;
+      #magic   {
         width: 100px;
         height:100px;
+        top:-930px; left:235px;
 
       }
          #iswd, #ihmr{
-           padding:5px;
+           padding:10px;
          }
           #iwnd {
-            padding:5px 35px 5px 35px;
+            padding:10px 0px 10px 0px;
+            margin-left: 35px;
+            margin-right: 35px;
             width:30px;
           }
-          #iswd {top:-730px; left:15px;}
-          #ihmr {top:-820px; left:125px;}
-          #iwnd {top:-910px; left:235px;}
+
+          #roomNum {
+            left:0px; top:0px;
+          }
 
           #restart {
             background-color:#ff3633;
@@ -191,11 +196,11 @@
             padding-left: 0px;
             padding-right: 0px;
           }
-          #loot1 {top:0px; left:0px;}
-          #loot2 {top:0px; left:0px;}
-          #loot3 {top:0px; left:0px;}
-          #loot4 {top:0px; left:0px;}
-          #loot5 {top:0px; left:0px;}
+          #loot1 {top:-920px; left:15px;}
+          #loot2 {top:-960px; left:115px;}
+          #loot3 {top:-1000px; left:215px;}
+          #loot4 {top:-1040px; left:315px;}
+          #loot5 {top:-1080px; left:415px;}
 
     </style>
 
@@ -226,7 +231,7 @@
 <!-- canvas -->
 
 <!-- enemies -->
-<div id="hp1">HP 1</div>
+<div id="hp1">HP 3</div>
 <div id="enemy1">
   <div class="sk" id="sk1"></div>
   <div class="zb" id="zb1"></div>
@@ -240,7 +245,7 @@
   <div class="sp" id="sp2"></div>
 </div>
 
-<div id="hp3">HP 3</div>
+<div id="hp3">HP 1</div>
 <div id="enemy3">
   <div class="sk" id="sk3"></div>
   <div class="zb" id="zb3"></div>
@@ -264,25 +269,16 @@
 <div class="btn" id="invBtn">Inventory</div>
 <div id="Inventory">
 
-  <div class="btn" id="iswd"><div class="swd" id="cutting" style="width:80px; height:80px;"></div></div>
-  <div class="btn" id="ihmr"><div class="hmr" id="blunt" style="width:80px; height:80px;"></div></div>
-  <div class="btn" id="iwnd"><div class="wnd" id="magic" style="width:30px; height:80px;"></div></div>
+  <div class="btn" id="cutting"><div class="swd" style="top:10px; left:10px;"></div></div>
+  <div class="btn" id="blunt"><div class="hmr" style="top:10px; left:10px;"></div></div>
+  <div class="btn" id="magic"><div class="wnd" style="top:10px; left:35px;"></div></div>
 
 
 </div>
-      <div class="visible"></div>
   <div class="btn" id="restart">Restart</div>
-      <div class="visible"></div>
   <div class="btn" id="nextRoom">Next Room</div>
-      <div class="visible"></div>
 
-      <div id="Loot">
-        <div class="btn" id="loot1">HP</div> <!-- HP -->
-        <div class="btn" id="loot2">Def</div> <!-- Defense -->
-        <div class="btn" id="loot3">Luck</div> <!-- Luck -->
-        <div class="btn" id="loot4">Atk</div> <!-- Attack -->
-        <div class="btn" id="loot5">Wpn</div> <!-- Random Weapon -->
-      </div>
+<div id="roomNum">Room: #</div>
 
   </body>
 

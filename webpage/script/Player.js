@@ -17,7 +17,7 @@ function resetPlayer() {
         "modifier": 1
       },
       "magic": {
-        "type": 1,
+        "type": 3,
         "modifier": 1
       }
     },

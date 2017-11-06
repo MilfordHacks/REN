@@ -12,6 +12,7 @@ function drawInventory(){
 
 function closeInventory(){
   $("#Inventory").hide();
+  updatePlayer();
   $("#invBtn").one("click", openInventory);
 }
 

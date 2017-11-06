@@ -46,13 +46,13 @@ function doTurn(character) {
     setTimeout(doTurn, 1000, nextCharacter);
   }
   else {
-    if (room.enemies > 0) {
+    if (room.enemies.length > 0) {
       $("#enemy1").one("click",attackFirst);
     }
-    if (room.enemies > 1) {
+    if (room.enemies.length > 1) {
       $("#enemy2").one("click",attackSecond);
     }
-    if (room.enemies > 2) {
+    if (room.enemies.length > 2) {
       $("#enemy3").one("click",attackThird);
     }
   }
