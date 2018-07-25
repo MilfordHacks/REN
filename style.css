@@ -1,0 +1,372 @@
+@font-face {
+	font-family:quikhand;
+	src: url(Quikhand.ttf);
+	font-weight: 400;
+}
+
+body {
+	color:#a168b7;
+	text-shadow: 1px 2px 0px #7d4695;
+	font-family: sans-serif;
+	font-weight: bold;
+	background-color: #3b6138;
+}
+
+h1, h2, h3 {
+	font-family: quikhand, serif;
+	letter-spacing: 4px;
+}
+
+div {
+	position: relative;
+}
+
+.enemies {
+	position:static;
+	width:800px; height:400px;
+	color:black;
+	text-shadow:none;
+	background-color:white;
+	border: solid 5px black;
+	border-radius:3px;
+}
+
+.btn {
+	background-color: #d0d0d0;
+	width: 90px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.btn:hover {
+	background-color: #b4b4b4;
+}
+
+/* monsters */
+.sk {
+	background-image: url(img/skel.png);
+	width:80px;
+	height:140px;
+}
+
+.zb {
+	background-image: url(img/zomb.png);
+	width:80px;
+	height:140px;
+}
+
+.sp {
+	background-image: url(img/spoder.png);
+	width:80px;
+	height:35px;
+}
+
+/* player */
+.plr {
+	background-image: url(img/plr.png);
+	width:70px;
+	height:160px;
+}
+
+/* items */
+.weap {
+	height: 80px;
+	width: 80px;
+
+	top: 10px;
+	left: 10px;
+}
+
+#swd {
+	background-image: url(img/swd.png);
+}
+
+#hmr {
+	background-image: url(img/hmr.png);
+}
+
+#wnd {
+	background-image: url(img/wnd.png);
+	width:30px;
+	left:35px;
+}
+
+/* misc */
+.frBl {
+	background-image: url(img/firbal.png);
+	width:;
+	height:;
+}
+
+.chst {
+	background-image: url(img/chst.png);
+	width:;
+	height:;
+}
+
+
+#invBtn {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	top: -740px;
+	left: 5px;
+
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+#sk1 {
+	top:0px;
+	left:0px;
+}
+
+#zb1 {
+	top:0px;
+	left:0px;
+}
+
+#sp1 {
+	top:100px;
+	left:0px;
+}
+
+#sk2 {
+	top:0px;
+	left:0px;
+}
+
+#zb2 {
+	top:0px;
+	left:0px;
+}
+
+#sp2 {
+	top:100px;
+	left:0px;
+}
+
+#sk3 {
+	top:0px;
+	left:0px;
+}
+
+#zb3 {
+	top:0px;
+	left:0px;
+}
+
+#sp3 {
+	top:100px;
+	left:0px;
+}
+
+#plr {
+	top:-280px;
+	left:900px;
+}
+
+#atk {
+	top:-580px;
+	left:835px;
+}
+
+#spd {
+	top:-380px;
+	left:960px;
+}
+
+#def {
+	top:-360px;
+	left:835px;
+}
+
+#luk {
+	top:-637px;
+	left:960px;
+}
+
+#hp  {
+	top:-535PX;
+	left:1000px;
+}
+
+#weapon1 {
+	top:-420px;
+	left:840px;
+}
+
+#weapon2 {
+	top:-420px;
+	left:840px;
+}
+
+#weapon3 {
+	top:-420px;
+	left:890px;
+}
+
+
+#enemy1, #enemy2, #enemy3 {
+	width: 80px;
+	height: 140px;
+}
+
+#enemy1 {
+	top:235px;
+	left:710px;
+}
+
+#enemy2 {
+	top:75px;
+	left:620px;
+}
+
+#enemy3 {
+	top:-85px;
+	left:530px;
+}
+
+#hp1, #hp2, #hp3 {
+	width:auto;
+	height:20px;
+	position:relative;
+}
+
+#hp1 {
+	top:230px;
+	left:710px;
+}   /*slot 1 hp*/
+
+#hp2 {
+	top:70px;
+	left:620px;
+}    /*slot 2 hp*/
+
+#hp3 {
+	top:-90px;
+	left:530px;
+}   /*slot 3 hp*/
+
+#cutting {
+	width: 100px;
+	height:100px;
+	top:-730px;
+	left:15px;
+}
+
+#blunt   {
+	width: 100px;
+	height:100px;
+	top:-830px;
+	left:125px;
+}
+
+#magic   {
+	width: 100px;
+	height:100px;
+	top:-930px;
+	left:235px;
+}
+
+#iswd, #ihmr{
+	padding:10px;
+}
+
+#iwnd {
+	padding:10px 0px 10px 0px;
+	margin-left: 35px;
+	margin-right: 35px;
+	width:30px;
+}
+
+#roomNum {
+	left:0px;
+	top:0px;
+}
+
+#restart {
+	background-color:#ff3633;
+	color:#330100;
+
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	z-index: 1;
+
+	top:-1049px;
+	left:655px;
+
+	display: none;
+}
+
+#restart:hover {
+	background-color: #ff0400;
+}
+
+#nextRoom {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+
+	z-index: 2;
+
+	top:-1088px;
+	left:655px;
+
+	display: none;
+}
+
+#Inventory {
+	display: none;
+}
+
+#Loot {
+	display: none;
+}
+
+#loot1, #loot2, #loot3, #loot4, #loot5 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#loot1 {
+	top:-920px;
+	left:15px;
+}
+
+#loot2 {
+	top:-960px;
+	left:115px;
+}
+
+#loot3 {
+	top:-1000px;
+	left:215px;
+}
+
+#loot4 {
+	top:-1040px;
+	left:315px;
+}
+
+#loot5 {
+	top:-1080px;
+	left:415px;
+}
